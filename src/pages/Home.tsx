@@ -14,7 +14,7 @@ export function Home({ content }: any) {
                 setTimeout(() => setIsLoading(false), 1000) &&
                 <Loader />
             ) : (
-                <div className="fundo flex-1 bg-no-repeat bg-cover bg-center  " style={{ backgroundImage: bgUrl }}>
+                <div className="fundo flex-1 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: bgUrl }}>
                     <Navbar setIsLoading={setIsLoading} />
                     {content.length > 0 && <Info movie={content[2]} />}
                     {content.length > 0 && <Popular isLoading={isLoading} movies={content} />}

@@ -15,7 +15,7 @@ export function Popular({ movies, isLoading }: any) {
                     <div className="flex overflow-x-auto scrollbar-hide">
                         {popularMovies &&
                             popularMovies.map((movie: any) => (
-                                <img className="min-w-[240px] pr-1 rounded-md " key={movie.id} src={`${url}${movie.backdrop_path}`} />
+                                <img className="link-two min-w-[240px] pr-1 rounded-md " key={movie.id} src={`${url}${movie.backdrop_path}`} />
                             ))
                         }
                     </div>

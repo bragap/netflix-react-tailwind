@@ -22,16 +22,15 @@ export function Navbar({ setIsLoading }: any) {
           <img src="./Search.png" alt="" />
         </NavLink>
         <NavLink to="/" className="link-two">
-          Kids
+             Kids</NavLink>
+        <NavLink to="/">
+          <img src="./Bell.png" alt="" className="link-two"/>
         </NavLink>
-        <NavLink to="/" className="link-two">
-          <img src="./Bell.png" alt="" />
+        <NavLink to="/">
+          <img src="./Avatar.png" alt="" className="link-two" />
         </NavLink>
-        <NavLink to="/" className="link-two">
-          <img src="./Avatar.png" alt="" />
-        </NavLink>
-        <NavLink to="/" className="link-two">
-          <img src="./Arrow.png" alt="" />
+        <NavLink to="/">
+          <img src="./Arrow.png" alt="" className="link-two"/>
         </NavLink>
       </div>
     </div>
