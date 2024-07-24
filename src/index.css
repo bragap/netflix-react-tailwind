@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+    width: 4px;              
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black;   
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: red;
+    
+  }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border-top-color: red; 
+  animation: spin 2s infinite linear; 
+}
+
+.link:hover{
+  border: none;
+  border-bottom: 1.5px solid red;
+  transition: all 0.3s ease;
+  transform: scale(1.15);
+}
+
+.link-two:hover{
+  border: none;
+  transition: all 0.3s ease;
+  transform: scale(1.15);
+}
