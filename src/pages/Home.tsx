@@ -47,7 +47,7 @@ export function Home({ content }: HomeProps) {
                 <Loader />
             ) : (
                 <div className=" flex-1 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: bgUrl }}>
-                    <div className="bg-[url('./BgLeft.png')] bg-cover">
+                    <div className="bg-[url('./public/BgLeft.png')] bg-cover">
                         <NavbarResponsive setIsLoading={setIsLoading} />
                         {content.length > 0 && <Info movie={content[3]} />}
                         {content.length > 0 && <Popular movies={content} />}
