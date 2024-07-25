@@ -7,44 +7,50 @@ import { NavLink } from 'react-router-dom';
 //local interface
 interface NavbarProps {
     setIsLoading: (isLoading: boolean) => void;
+    setMovieInPainel: (index: number) => void;
 }
 
-const NavbarResponsive: React.FC<NavbarProps> = ({ setIsLoading }) => {
+const NavbarResponsive: React.FC<NavbarProps> = ({ setIsLoading, setMovieInPainel }) => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const handleClick= () => {
+        setIsLoading(true);
+        setMovieInPainel(0);
+    } 
 
     return (
         <header className="bg-gradient-to-b from-black/70 to-transparent text-slate-200 px-6 fixed w-full text-sm lg:flex lg:justify-between lg:items-center lg:px-10 lg:py-3">
             <div className="flex items-center justify-between px-4 py-4 lg:p-0 lg:flex-grow">
                 <div className="flex items-center">
-                    <NavLink to="/" className="link-two" onClick={() => setIsLoading(true)}>
+                    <NavLink to="/" className="link-two" onClick={handleClick}>
                         <img src="./Vector.png" alt="Netflix Logo" />
                     </NavLink>
                     <nav className="hidden lg:flex lg:ml-10">
                         <ul className="flex gap-7">
                             <NavLink
                                 to="/"
-                                onClick={() => setIsLoading(true)}
+                                onClick={handleClick}
                                 className={({ isActive }) => (isActive ? "link font-bold" : "link")}
                             >
                                 Início
                             </NavLink>
                             <NavLink
                                 to="/series"
-                                onClick={() => setIsLoading(true)}
+                                onClick={handleClick}
                                 className={({ isActive }) => (isActive ? "link font-bold" : "link")}
                             >
                                 Séries
                             </NavLink>
                             <NavLink
                                 to="/upcoming"
-                                onClick={() => setIsLoading(true)}
+                                onClick={handleClick}
                                 className={({ isActive }) => (isActive ? "link font-bold" : "link")}
                             >
                                 Estréias
                             </NavLink>
                             <NavLink
                                 to="/top-movies"
-                                onClick={() => setIsLoading(true)}
+                                onClick={handleClick}
                                 className={({ isActive }) => (isActive ? "link font-bold" : "link")}
                             >
                                 Filmes Mais Avaliados
@@ -78,28 +84,28 @@ const NavbarResponsive: React.FC<NavbarProps> = ({ setIsLoading }) => {
                 <ul className="text-sm flex flex-row gap-7 lg:text-base">
                     <NavLink
                         to="/"
-                        onClick={() => setIsLoading(true)}
+                        onClick={handleClick}
                         className={({ isActive }) => (isActive ? "link font-bold" : "link")}
                     >
                         Início
                     </NavLink>
                     <NavLink
                         to="/series"
-                        onClick={() => setIsLoading(true)}
+                        onClick={handleClick}
                         className={({ isActive }) => (isActive ? "link font-bold" : "link")}
                     >
                         Séries
                     </NavLink>
                     <NavLink
                         to="/upcoming"
-                        onClick={() => setIsLoading(true)}
+                        onClick={handleClick}
                         className={({ isActive }) => (isActive ? "link font-bold" : "link")}
                     >
                         Estréias
                     </NavLink>
                     <NavLink
                         to="/top-movies"
-                        onClick={() => setIsLoading(true)}
+                        onClick={handleClick}
                         className={({ isActive }) => (isActive ? "link font-bold" : "link")}
                     >
                         Filmes Mais Avaliados

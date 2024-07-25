@@ -11,7 +11,7 @@ interface InfoProps {
 export function Info({ movie }: InfoProps) {
 
     const conteudo = movie.title ? movie.title : movie.name;
-    const descricao = movie ? movie.overview.substring(0, 200) + "..." : "Sem descrição";
+    const descricao = movie.overview ? movie.overview.substring(0, 180) + "..." : "Esse programa está sem descrição no momento.";
     const tipo = movie.title ? "F I L M E S" : "S É R I E S";
 
     return (
