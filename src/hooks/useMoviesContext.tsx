@@ -1,4 +1,7 @@
+// importing the context
 import { MoviesContext } from "../contexts/MoviesContext";
+
+// importing the hook
 import { useContext } from "react";
 
 export function useMoviesContext() {

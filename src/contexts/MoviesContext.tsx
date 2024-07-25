@@ -1,4 +1,7 @@
+//hooks from react
 import { createContext, useEffect, useState } from 'react'
+
+// api
 import { getPopularMovies, getPopularTvSeries, getTopRatedMovies, getUpcomingMovies } from '../lib/api';
 
 export const MoviesContext = createContext<any>(null);

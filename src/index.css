@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+// usuario nao seleciona html
 body{
   user-select:none
 }
 
+{/*INICIO- design da barra de scroll da pagina*/}
 body::-webkit-scrollbar {
-    width: 4px;              
+    width: 6px;              
   }
   
   body::-webkit-scrollbar-track {
@@ -19,6 +21,10 @@ body::-webkit-scrollbar {
     
   }
 
+  {/*FIM- design da barra de scroll da pagina*/}
+
+
+// retirando scroll do carrossel popular
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -28,6 +34,7 @@ body::-webkit-scrollbar {
   scrollbar-width: none;
 }
 
+// transform do spinn loader
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -37,6 +44,7 @@ body::-webkit-scrollbar {
   }
 }
 
+// css adicionais ao tailwind
 .loader {
   border-top-color: red; 
   animation: spin 2s infinite linear; 

@@ -1,6 +1,10 @@
+// hooks from react
 import React, { useState } from 'react';
+
+//react router dom
 import { NavLink } from 'react-router-dom';
 
+//local interface
 interface NavbarProps {
     setIsLoading: (isLoading: boolean) => void;
 }
@@ -106,7 +110,7 @@ const NavbarResponsive: React.FC<NavbarProps> = ({ setIsLoading }) => {
                 <NavLink to="/">
                     <img src="./Search.png" alt="Search" className="link-two w-6" />
                 </NavLink>
-                
+
                 <NavLink to="/">
                     <img src="./Bell.png" alt="Notifications" className="link-two w-6" />
                 </NavLink>
