@@ -15,12 +15,12 @@ export function Info({ movie }: InfoProps) {
     const tipo = movie.title ? "F I L M E S" : "S É R I E S";
 
     return (
-        <div className="flex flex-col items-center text-start pt-36 space-y-2 w-[620px] text-slate-100 m-auto md:items-start md:justify-start md:text-center md:px-10 md:pt-20 md:pb-6 md:m-0 md:space-y-3.5" >
+        <div className="flex flex-col items-center text-start pt-36 space-y-2 md:w-[620px] text-slate-100 m-auto md:items-start md:justify-start md:text-center md:px-10 md:pt-20 md:pb-6 md:m-0 md:space-y-3.5" >
             <div className=" flex gap-3 items-center">
                 <img src="./N.png" alt="" className="h-8" />
                 <p className="md:font-semibold">{tipo}</p>
             </div>
-            <div className="sm:text-3l text-4xl text-wrap text-center md:text-6xl md:text-left">
+            <div className="sm:text-2l text-4xl text-wrap text-center md:text-6xl md:text-left">
                 {conteudo}
             </div>
             <div className="flex gap-1 items-center font-bold">
