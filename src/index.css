@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  user-select:none
+}
+
 body::-webkit-scrollbar {
     width: 4px;              
   }
@@ -40,14 +44,14 @@ body::-webkit-scrollbar {
 
 .link:hover{
   border: none;
-  border-bottom: 1.5px solid red;
-  transition: all 0.3s ease;
-  transform: scale(1.15);
+  color: #c9c9c9;
+  transition: all 0.6s ease;
 }
 
 .link-two:hover{
   border: none;
   transition: all 0.3s ease;
-  transform: scale(1.15);
+  transform: scale(1.1);
   cursor: pointer;
 }
+
