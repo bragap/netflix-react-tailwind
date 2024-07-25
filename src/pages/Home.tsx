@@ -32,7 +32,6 @@ interface HomeProps {
 
 export function Home({ content }: HomeProps) {
     const bgUrl = content.length > 0 ? `url(https://image.tmdb.org/t/p/original/${content[3].backdrop_path})` : ``;
-    const bgUrl2 = "./Bg-left.png"
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
